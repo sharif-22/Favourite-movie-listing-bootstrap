@@ -59,7 +59,9 @@
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
                 <!-- logo -->
-                <a class="navbar-brand bg-secondary-subtle rounded p-2" href="#"
+                <a
+                  class="navbar-brand bg-secondary-subtle rounded p-2"
+                  href="./index.html"
                   >Movies 🎬</a
                 >
                 <!-- logo -->
@@ -74,15 +76,14 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./index.html"
+                  <a class="nav-link" aria-current="page" href="./index.html"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./favourite.html">Favourite</a>
+                  <a class="nav-link active" href="./favourite.html"
+                    >Favourite</a
+                  >
                 </li>
                 <!-- drop down -->
                 <li class="nav-item dropdown">
@@ -128,112 +129,1209 @@
       <!-- container fluid -->
     </nav>
     <!-- nav bar -->
-    <!-- <div class="container">
-       -->
-    <div class="container">
-      <h1>Action</h1>
-      <div class="row d-flex align-items-center justify-content-around">
-        <div class="col col-lg-3">
-          <!-- card -->
-          <div class="card m-2" style="width: 18rem">
-            <img
-              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/65Q1wpRPZ5E3UVUv2V5JBbJQCcj.jpg"
-              class="card-img-top"
-              alt="Mersal poster"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Mersal</h5>
-              <div class="card-text text-body-light d-flex flex-column m-1">
-                <small>Genre : Thriller,Action</small>
-                <small>Duration : 2h 49m</small>
-                <small>Release Date : 18/10/2017 (IN)</small>
-              </div>
+
+    <!-- Favourite movies list -->
+    <div
+      id="hero-favourite"
+      class="d-flex justify-content-center align-items-center flex-column"
+    >
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
               <a
                 href="https://www.imdb.com/title/tt6485666/?ref_=ext_shr_lnk"
                 target="_blank"
-                class="btn btn-warning"
-                >Imbd</a
               >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/65Q1wpRPZ5E3UVUv2V5JBbJQCcj.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Mersal Poster img"
+                />
+              </a>
             </div>
-          </div>
-        </div>
-        <div class="col col-lg-3">
-          <!-- card -->
-          <div class="card m-2" style="width: 18rem">
-            <img
-              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/f6BhexotEqO3GejXa3FopBNGL6M.jpg"
-              class="card-img-top"
-              alt="Theri  poster"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Theri</h5>
-              <div class="card-text text-body-light d-flex flex-column m-1">
-                <small>Genre : Action,Family,Romance</small>
-                <small>Duration : 2h 37m</small>
-                <small>Release Date : 14/04/2016 (IN)</small>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Mersal</h5>
+                <h6 class="card-title">Atlee</h6>
+                <p class="card-text">
+                  A few individuals in the medical profession are murdered or
+                  kidnapped, and the cop investigating the case suspects a
+                  doctor and arrests him. But is he the one who is behind these
+                  crimes? And why are they being committed?
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Thriller
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 49m</small>
+                  <small>Release Date : 18/10/2017 (IN)</small>
+                </div>
               </div>
-              <a
-                href="https://www.imdb.com/title/tt5440700/?ref_=ext_shr_lnk"
-                target="_blank"
-                class="btn btn-warning"
-                >Imbd</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-3">
-          <!-- card -->
-          <div class="card m-2" style="width: 18rem">
-            <img
-              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uTQNCqMnSDbZghFYNmzDvTVD413.jpg"
-              class="card-img-top"
-              alt="Thuppakki poster"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Thuppakki</h5>
-              <div class="card-text text-body-light d-flex flex-column m-1">
-                <small>Genre : Action,Thriller</small>
-                <small>Duration : 2h 45m</small>
-                <small>Release Date : 13/11/2012 (IN)</small>
-              </div>
-              <a
-                href="https://www.imdb.com/title/tt2187153/?ref_=ext_shr_lnk"
-                target="_blank"
-                class="btn btn-warning"
-                >Imbd</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-3">
-          <!-- card -->
-          <div class="card m-2" style="width: 18rem">
-            <img
-              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/34SF6OzngmTLeqvJUsiVr69yqNU.jpg"
-              class="card-img-top"
-              alt="Thirupaachi poster"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Thirupaachi</h5>
-              <div class="card-text text-body-light d-flex flex-column m-1">
-                <small>Genre : Action,Thriller</small>
-                <small>Duration : 2h 40m</small>
-                <small>Release Date : 14/01/2005 (IN)</small>
-              </div>
-              <a
-                href="https://www.imdb.com/title/tt0475756/?ref_=ext_shr_lnk"
-                target="_blank"
-                class="btn btn-warning"
-                >Imbd</a
-              >
             </div>
           </div>
         </div>
       </div>
-      <h1>Romance</h1>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt5440700/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/f6BhexotEqO3GejXa3FopBNGL6M.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Theri  Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Theri</h5>
+                <h6 class="card-title">Atlee</h6>
+                <p class="card-text">
+                  When an honest cop, Vijay Kumar's family is ruthlessly
+                  slaughtered by a politician and his aides, he decides to
+                  change his identity and commits his life to bring his daughter
+                  up in a serene atmosphere. But some freak events end up
+                  compromising his identity and what he does to save his
+                  daughter and avenge the death of his family unfurls as Theri.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Family
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Romance
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 37m</small>
+                  <small>Release Date : 14/04/2016 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt2187153/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uTQNCqMnSDbZghFYNmzDvTVD413.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Thuppakki Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Thuppakki</h5>
+                <h6 class="card-title">A.R. Murugadoss</h6>
+                <p class="card-text">
+                  An army captain is on a mission to track down and destroy a
+                  terrorist gang and deactivate the sleeper cells under its
+                  command.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Thriller
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 45m</small>
+                  <small>Release Date : 13/11/2012 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt2180477/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dmhPnvYQVtx4xS1dkA9trCpQXvY.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Nanban Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Nanban</h5>
+                <h6 class="card-title">S. Shankar</h6>
+                <p class="card-text">
+                  10 years after leaving college, two best friends and their
+                  rival go on a search for their third friend, while finding out
+                  some truths along the way.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Comedy
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Drama
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 40m</small>
+                  <small>Release Date : 14/01/2012 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt0475756/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/34SF6OzngmTLeqvJUsiVr69yqNU.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Thirupaachi Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Thirupaachi</h5>
+                <h6 class="card-title">Perarasu</h6>
+                <p class="card-text">
+                  Sivagiri, a blacksmith from a village, visits Chennai to meet
+                  his sister and her husband. When he sees the city is not a
+                  safe residence for commoners, he takes the matter into his own
+                  hands.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Thriller
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 40m</small>
+                  <small>Release Date : 14/01/2005 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt0422320/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/mwXyBxPH6e7GgDdNicmalX1V9GI.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Ghilli Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Ghilli</h5>
+                <h6 class="card-title">Dharani</h6>
+                <p class="card-text">
+                  Muthu Pandi, a village strongman, decides to marry
+                  Dhanalakshmi, and begins his quest by eliminating everyone who
+                  opposes their union - starting with both her brothers. In
+                  desperation, Dhanalakshmi decides to escape from the village,
+                  and in the process is unwittingly assisted by a university
+                  Kabaddi player Velu.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Comedy
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Family
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Romance
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 48m</small>
+                  <small>Release Date : 17/04/2004 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt15163652/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5Cdi9MFxEGsfphvDxV4TyY4znP6.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Thunivu Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Thunivu</h5>
+                <h6 class="card-title">H. Vinoth</h6>
+                <p class="card-text">
+                  A gang goes to rob a bank only to find that there's already a
+                  criminal mastermind holding it for ransom, but his identities
+                  and motives behind the heist remains mysterious. As they plan
+                  to collect the bounty and disappear without a trace, their
+                  crimes and their past slowly catches up with them.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Crime
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Thriller
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 26m</small>
+                  <small>Release Date : 11/01/2023 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt4258292/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hGQYVXiB16I7pPqQVSGqvgWIMkQ.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Yennai Arindhaal Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Yennai Arindhaal</h5>
+                <h6 class="card-title">Gautham Vasudev Menon</h6>
+                <p class="card-text">
+                  Sathyadev, who is on a career break, is forced to put on his
+                  cop shoes ones again to save Thenmozhi, a young woman who is
+                  the target of a criminal organ harvesting group, led by a
+                  ghost from his past.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Thriller
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 56m</small>
+                  <small>Release Date : 06/02/2015 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt3320578/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nN8R6j4KhKh5W7AQmtTcIgeGSK7.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Veeram Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Veeram</h5>
+                <h6 class="card-title">Siva</h6>
+                <p class="card-text">
+                  A straightforward man, who uses violence to settle disputes,
+                  decides to mend his ways for the sake of his lover, but when
+                  he learns that her family is in danger, he decides to save
+                  them at all cost.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Comedy
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 41m</small>
+                  <small>Release Date : 10/01/2014 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt1705772/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/tZnDKJyUYfZKKPfBgVheU9vKlUo.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Mankatha  Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Mankatha</h5>
+                <h6 class="card-title">Venkat Prabhu</h6>
+                <p class="card-text">
+                  Vinayak, a suspended cop, helps a group of four men rob
+                  cricket betting money amounting to 500 crores INR. When it
+                  comes to splitting the amount, betrayal hits the team hard and
+                  a chase ensues.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Thriller
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 29m</small>
+                  <small>Release Date : 31/08/2011 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt0807944/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8CcUR3MbY1lSHlts6KiqVQNnEbb.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Dheena Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Dheena</h5>
+                <h6 class="card-title">A.R. Murugadoss</h6>
+                <p class="card-text">
+                  A local gangster and his adopted brother rule over a town
+                  together. However, their relationship turns sour after the
+                  man's sister dies due to the gangster's mistake.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Drama
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 37m</small>
+                  <small>Release Date : 14/01/2001 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt0242572/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xt7s7796EtdPo5GAAYUIVfAxE0R.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Kandukondain Kandukondain  Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Kandukondain Kandukondain</h5>
+                <h6 class="card-title">Rajiv Menon</h6>
+                <p class="card-text">
+                  Two young women with differing views on love find themselves
+                  with three suitors.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Drama
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Romance
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 37m</small>
+                  <small>Release Date : 05/05/2000 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt15097216/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zb9QBUn5AZzoKCS2jsnhp6ySSGp.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Jai Bhim Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Jai Bhim</h5>
+                <h6 class="card-title">T. J. Gnanavel</h6>
+                <p class="card-text">
+                  A pregnant woman from a primitive tribal community, searches
+                  desperately for her husband, who is missing from police
+                  custody. So as to find her husband and seek justice for them,
+                  as their voice, a High Court advocate rises in support. Will
+                  their battle for justice succeed?
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Crime
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Drama
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Mystery
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 44m</small>
+                  <small>Release Date : 02/11/2021 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt10189514/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/83AFk8uxCpzAcCnVEnEw3sIKiiE.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Soorarai Pottru Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Soorarai Pottru</h5>
+                <h6 class="card-title">Sudha Kongara Prasad</h6>
+                <p class="card-text">
+                  Nedumaaran Rajangam 'Maara' sets out to make the common man
+                  fly and in the process takes on the world's most capital
+                  intensive industry and several enemies who stand in his way.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Drama
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 29m</small>
+                  <small>Release Date : 12/11/2020 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt3563156/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/b3PM4bEQ1txDR30D2K79gGwvRIJ.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Anjaan Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Anjaan</h5>
+                <h6 class="card-title">N. Linguswamy</h6>
+                <p class="card-text">
+                  Krishna (Suriya) comes to Mumbai in search of his brother Raju
+                  Bhai (Suriya), an underworld don. Through Raju Bhai's gangster
+                  friends, his past life is revealed. What happened to Raju
+                  Bhai? Will Krishna find him?
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Thriller
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Crime
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 50m</small>
+                  <small>Release Date : 15/08/2014 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt1355546/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/evUg9kwqH3VPvpnUl8XGDzp3LUP.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Ayan Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Ayan</h5>
+                <h6 class="card-title">K. V. Anand</h6>
+                <p class="card-text">
+                  Deva works for Arumugam, a smuggler, who has taken care of him
+                  for many years. However, when his best friend gets killed,
+                  Deva decides to help the police to nab a dangerous drug lord.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Romance
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Comedy
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 42m</small>
+                  <small>Release Date : 03/04/2009 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt1180583/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3PxkiDTObsws7pzkdUiHCjOxVA4.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Vaaranam Aayiram Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Vaaranam Aayiram</h5>
+                <h6 class="card-title">Gautham Vasudev Menon</h6>
+                <p class="card-text">
+                  A son deals with the death of his father and examines how
+                  their relationship influences him through growing up, romance,
+                  tragedy and adventure.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Drama
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Romance
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 49m</small>
+                  <small>Release Date : 14/11/2008 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt0455309/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ihNGwszP89k2h4OHaYAnePQ15xc.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Aaru  Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Aaru</h5>
+                <h6 class="card-title">Hari</h6>
+                <p class="card-text">
+                  A thug, with his partners, is chosen to work for a criminal
+                  gang and he becomes the left-hand man of the leader. The
+                  leader declares a war against another criminal and the thug
+                  has to protect him despite losing his friends.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Romance
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Crime
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 48m</small>
+                  <small>Release Date : 09/12/2005 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt0449951/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fWCiwGeABg5APrLGHV2IgxoP20N.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Ghajini Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Ghajini</h5>
+                <h6 class="card-title">A.R. Murugadoss</h6>
+                <p class="card-text">
+                  After being hit by an iron rod, Sanjay Ramaswamy, a business
+                  tycoon, suffers from anterograde amnesia. He is unable to
+                  remember anything beyond fifteen minutes. Under such
+                  circumstances, he sets out on a quest to find the people who
+                  were responsible for his lover Kalpana's murder.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Romance
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Thriller
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 3h 2m</small>
+                  <small>Release Date : 14/10/2005 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt0386650/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jy3IROWub1Pr3h46dGFTzVTzknD.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Mounam Pesiyadhe  Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Mounam Pesiyadhe</h5>
+                <h6 class="card-title">Ameer</h6>
+                <p class="card-text">
+                  Gautham, who runs a restaurant, falls in love with his friend
+                  Kannan's cousin, Sandhya. Problems arise when Gautham learns
+                  that Kannan's parents want Kannan to marry Sandhya.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Romance
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Drama
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 48m</small>
+                  <small>Release Date : 13/12/2002 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt9477520/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/Elnp3XrAlMM30dil8rbL7D9XeP.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Asuran  Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Asuran</h5>
+                <h6 class="card-title">Vetrimaaran</h6>
+                <p class="card-text">
+                  A family from the underprivileged class is on the run after
+                  the teenaged son kills a rich man from the upper caste. Can
+                  the pacifist father be able to save his hot-blooded son?
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Drama
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 21m</small>
+                  <small>Release Date : 04/10/2019 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt5959980/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/tl3WcNY41um1OOsjr3z6eqK31yN.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Vada Chennai Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Vada Chennai</h5>
+                <h6 class="card-title">Vetrimaaran</h6>
+                <p class="card-text">
+                  A young carrom player in North Chennai becomes a reluctant
+                  participant in a war between two feuding gangsters.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Crime
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Drama
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 46m</small>
+                  <small>Release Date : 17/10/2018 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt3822396/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yHBS5k3oxQAEdRryZ4SsVQLpeN.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Velaiyilla Pattathari Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Velaiyilla Pattathari</h5>
+                <h6 class="card-title">R. Velraj</h6>
+                <p class="card-text">
+                  Raghuvaran, who is unemployed for years, gets his dream job
+                  but a powerful rival is keen to put him down. Can he take on
+                  his adversary?
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Drama
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Comedy
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 15m</small>
+                  <small>Release Date : 18/07/2014 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt2355791/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zmE5ZmMwhAiBz77UwNxdPDZmbSu.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Polladhavan Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Polladhavan</h5>
+                <h6 class="card-title">Vetrimaaran</h6>
+                <p class="card-text">
+                  Prabhu is dejected when he learns that his bike has been
+                  stolen. He decides to find the people who stole the bike, but
+                  lands in trouble when he realises that his bike has been used
+                  to transport drugs.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Action
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Drama
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 30m</small>
+                  <small>Release Date : 08/11/2007 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt2123129/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kJr9qEAIh8zvPOrGu4K42rK47Dr.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="3 Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">3</h5>
+                <h6 class="card-title">Aishwarya Rajinikanth</h6>
+                <p class="card-text">
+                  Ram and Janani are high school sweethearts who eventually get
+                  married. However, Janani is mystified when Ram commits suicide
+                  all of a sudden and she tries to find out the truth behind his
+                  death.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Drama
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Romance
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 25m</small>
+                  <small>Release Date : 30/03/2012 </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="card m-4" style="max-width: 1000px">
+          <div class="row g-0 rounded overflow-hidden">
+            <div class="col-md-2">
+              <a
+                href="https://www.imdb.com/title/tt3358534/?ref_=ext_shr_lnk"
+                target="_blank"
+              >
+                <img
+                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8AvIshFtIzP2eFsbP12VNNu1612.jpg"
+                  class="img-fluid object-fit-contain"
+                  alt="Thiruvilaiyaadal Aarambam  Poster img"
+                />
+              </a>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Thiruvilaiyaadal Aarambam</h5>
+                <h6 class="card-title">Boopathy Pandian</h6>
+                <p class="card-text">
+                  A reckless boy falls for a girl whose disapproving brother is
+                  a rich businessman.
+                </p>
+                <ol class="d-flex list-unstyled gap-3 m-0">
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Comedy
+                  </li>
+                  <li class="badge rounded-pill text-bg-secondary p-2 m-0">
+                    Romance
+                  </li>
+                </ol>
+                <div
+                  class="card-text text-body-light d-flex justify-content-between m-1"
+                >
+                  <small>Duration : 2h 30m</small>
+                  <small>Release Date : 15/12/2006 (IN)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- hero section  -->
+    <!-- Favourite movies list -->
 
     <!-- footer -->
     <footer>
@@ -411,6 +1509,5 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="./filter.js"></script> -->
   </body>
 </html>
